@@ -156,8 +156,6 @@ nav a{
 	width: 100%;
 }
 .footer-banner {
-	width: 30%;
-	float: left;
 	text-align: center;
 	padding: 100px 0;
 }
@@ -206,10 +204,7 @@ nav a{
 	width: 0;
 }
 .footer-part {
-	float: left;
 	padding: 100px 0;
-	/* text-align: left; */
-	width: 70%;
 	background: #333;
 }
 .footer-links {
@@ -326,3 +321,6 @@ nav a{
 	width: 75px
 }
 /* FOOTER PART ENDS */
+.m-bottom-reset{
+  margin-bottom: 0px;
+}
