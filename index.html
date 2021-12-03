@@ -51,6 +51,7 @@ body {
   font-size: 16px;
 }
 
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -123,8 +124,9 @@ h3 {
 }
 
 .resume .base .manoj_profile .photo img {
-  width: 100%;
+  width: 50%;
   border-radius: 50%;
+  border: 1px solid;
 }
 
 .resume .base .manoj_profile .photo {
@@ -541,6 +543,44 @@ h3 {
 .resume .func .interests-items div span {
   display: block;
 }
+.base {
+    display: flex;
+    flex-direction: column;
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+@media only screen and (max-width: 900px) {
+  .resume {
+    flex-direction: column;
+  }
+  .base {
+      width: 100% !important;
+      padding-bottom: 90px;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+  }
+  .contact {
+    width: 49%;
+    padding: 10px;
+  }
+  .follow {
+      padding: 10px;
+  }
+  .resume .base .manoj_profile::after {
+    transform: skewY(-2deg);
+    bottom: -16px;
+    height: 40px;
+  }
+  .photo img {
+      width:25% !important;
+  }
+
+}
 
 </style>
 </head> 
@@ -561,7 +601,8 @@ h3 {
   <div class="base">
     <div class="manoj_profile">
       <div class="photo">
-        <i class="fas fa-rocket"></i>
+        <!-- <i class="fas fa-rocket"></i> -->
+        <img src="image/profileimg.jpg" alt="Avatar">
       </div>
       <div class="info">
         <h1 class="name">Manoj Kumar CA</h1>
@@ -571,6 +612,7 @@ h3 {
     <div class="about">
       <h3>About Me</h3>I'm a web developer, specializing in web application design, develop. Experienced with Javascript, HTML, CSS, Angular,Node JS and responsive web design
     </div>
+    <div class="contact-section">
     <div class="contact">
       <h3>Contact Me</h3>
       <div class="call"><a href="tel:+1 416-829-7643"><i class="fas fa-phone"></i><span>+1 416-829-7643</span></a></div>
@@ -591,13 +633,14 @@ h3 {
         <a href="https://linkedin.com/in/manoj-kumar-c-a-67a49a60" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
+     </div>
   </div>
   <div class="func">
     <div class="work">
       <h3><i class="fa fa-briefcase"></i>Experience</h3>
       <ul>
         <li><span>Software Developer -<br>Front End Developer</span><small>Amadeus</small><small>Oct 2019 - Now</small></li>
-        <li><span>Senior Software Developerr</span><small>Amadeus Software labs India</small><small>Dec 2017 - Oct 2019</small></li>
+        <li><span>Senior Software Developer</span><small>Amadeus Software labs India</small><small>Dec 2017 - Oct 2019</small></li>
         <li><span>Software Engineer</span><small>Global Logic</small><small>Feb 2016 - Dec 2017</small></li>
         <li><span>Software Developer</span><small>emids Technologies</small><small>Jan 2014 - Feb 2016</small></li>
       </ul>
@@ -744,7 +787,7 @@ h3 {
             }
           }
         );
-    }); 
+    });
 }.call(this));
 
    </script>
